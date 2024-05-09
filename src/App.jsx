@@ -1,12 +1,12 @@
 import './styles/style.css';
-import AdviceCounter from './components/AdviceCounter';
+import Advice from './components/Advice';
 
 function App() {
 
   return (
     <>
     <div id="adviceGenerator">
-      <AdviceCounter />
+      <Advice />
     </div>
     </>
   )

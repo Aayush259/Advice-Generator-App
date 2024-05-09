@@ -1,13 +1,9 @@
-import { useState } from "react";
-
-function AdviceCounter() {
-
-    let [adviceCount, setAdviceCount] = useState(1);
+function AdviceCounter(props) {
 
     return (
         <>
         <header id="adviceCount">
-            <h1>Advice #{adviceCount}</h1>
+            <h1>Advice #{props.adviceID}</h1>
         </header>
         </>
     )
