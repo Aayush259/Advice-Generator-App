@@ -27,7 +27,7 @@ body{
 }
 
 #adviceGenerator{
-    width:97vw;
+    width:95vw;
     max-width:500px;
     padding:2.5rem;
     padding-bottom:0;
@@ -92,8 +92,8 @@ body{
 }
 
 @keyframes completeLoaderSpinner{
-    from{transform:rotate(0deg);}
-    to{transform:rotate(360deg);}
+    from{transform:rotate(0deg)}
+    to{transform:rotate(360deg)}
 }
 
 @keyframes loaderFragementSpinner{
@@ -111,5 +111,14 @@ body{
     }100%{
         border-right-color:var(--Neon-Green);
         border-top-color:var(--Light-Cyan);
+    }
+}
+
+@media only screen and (max-width:400px){
+    #adviceGenerator{
+        padding:2.5rem 1.3rem 0 1.3rem;
+    }
+    #patternDivider{
+        background-image:url('../images/pattern-divider-mobile.svg');
     }
 }
