@@ -36,6 +36,7 @@ function Advice() {
                 <AdviceCounter adviceID={adviceID} />
                 <p>&ldquo;{advice}&rdquo;</p>
             </div>
+            <div id="patternDivider"></div>
         </>
     )
 }

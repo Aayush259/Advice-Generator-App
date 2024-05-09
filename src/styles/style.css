@@ -30,7 +30,7 @@ body{
     width:97vw;
     max-width:600px;
     padding:2rem;
-    background-color:var(--Grayish-Blue);
+    background-color:var(--Dark-Grayish-Blue);
     border-radius:0.5rem;
     text-align:center;
 }
@@ -50,4 +50,12 @@ body{
 #advice{
     color:#FFF;
     font-size:28px;
+    margin-bottom:2.3rem;
+}
+
+#patternDivider{
+    height:20px;
+    background-image:url('../images/pattern-divider-desktop.svg');
+    background-repeat:no-repeat;
+    background-size:cover;
 }
