@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import AdviceCounter from "./AdviceCounter";
 
-function Advice() {
+function Advice(props) {
 
     // Initializing state for adviceID and the advice to null.
     let [adviceID, setAdviceID] = useState(null);
@@ -25,7 +25,7 @@ function Advice() {
 
         })
         .catch(error => console.log("Error:", error))
-    });
+    }, [props.count]);
 
     // Displaying loader until the adviceData gets fetched.
     if (advice === null) {
