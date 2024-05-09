@@ -14,7 +14,7 @@
     --Dark-Blue: hsl(218, 23%, 16%);
 }
 
-.flex, body{
+body{
     display:flex;
     flex-direction:row;
     justify-content:center;
@@ -28,8 +28,9 @@ body{
 
 #adviceGenerator{
     width:97vw;
-    max-width:600px;
-    padding:2rem;
+    max-width:500px;
+    padding:2.5rem;
+    padding-bottom:0;
     background-color:var(--Dark-Grayish-Blue);
     border-radius:0.5rem;
     text-align:center;
@@ -48,7 +49,7 @@ body{
 }
 
 #advice{
-    color:#FFF;
+    color:var(--Light-Cyan);
     font-size:28px;
     margin-bottom:2.3rem;
 }
@@ -57,5 +58,24 @@ body{
     height:20px;
     background-image:url('../images/pattern-divider-desktop.svg');
     background-repeat:no-repeat;
-    background-size:cover;
+    background-size:contain;
+}
+
+#generateAdviceBtn{
+    position:relative;
+    height:55px;
+    width:55px;
+    border-radius:100px;
+    border:none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:0.5rem auto 0 auto;
+    top:1.8rem;
+    cursor:pointer;
+    background-color:var(--Neon-Green);
+}
+
+#generateAdviceBtn:active{
+    box-shadow:0 0 30px 4px var(--Neon-Green);
 }

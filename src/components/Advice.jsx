@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import AdviceCounter from "./AdviceCounter";
+import iconDice from "../images/icon-dice.svg";
 
 function Advice() {
 
@@ -37,6 +38,9 @@ function Advice() {
                 <p>&ldquo;{advice}&rdquo;</p>
             </div>
             <div id="patternDivider"></div>
+            <button id="generateAdviceBtn">
+                <img src={iconDice} alt="Generate advice" />
+            </button>
         </>
     )
 }
