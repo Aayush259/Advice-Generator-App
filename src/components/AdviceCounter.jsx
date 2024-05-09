@@ -2,7 +2,7 @@ function AdviceCounter(props) {
 
     return (
         <>
-        <header id="adviceCount">
+        <header id="adviceID">
             <h1>Advice #{props.adviceID}</h1>
         </header>
         </>

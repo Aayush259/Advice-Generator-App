@@ -17,7 +17,7 @@ function Advice() {
             setAdvice(adviceData.slip.advice);
             // Setting AdviceID in state using setAdviceID setter.
             setAdviceID(adviceData.slip.id);
-            
+
         })
         .catch(error => console.log("Error:", error))
     }, []);
@@ -34,7 +34,7 @@ function Advice() {
         <>
             <div id="advice">
                 <AdviceCounter adviceID={adviceID} />
-                {advice}
+                <p>&ldquo;{advice}&rdquo;</p>
             </div>
         </>
     )

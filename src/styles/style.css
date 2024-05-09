@@ -14,9 +14,40 @@
     --Dark-Blue: hsl(218, 23%, 16%);
 }
 
-.flex{
+.flex, body{
     display:flex;
     flex-direction:row;
     justify-content:center;
     align-items:center;
+}
+
+body{
+    min-height:100vh;
+    background-color:var(--Dark-Blue);
+}
+
+#adviceGenerator{
+    width:97vw;
+    max-width:600px;
+    padding:2rem;
+    background-color:var(--Grayish-Blue);
+    border-radius:0.5rem;
+    text-align:center;
+}
+
+#adviceID{
+    color:var(--Neon-Green);
+    font-size:7px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    margin-bottom:1.5rem;
+}
+
+#adviceID > h1, #advice{
+    font-weight:800;
+}
+
+#advice{
+    color:#FFF;
+    font-size:28px;
 }
