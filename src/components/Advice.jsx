@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import AdviceCounter from "./AdviceCounter";
-import iconDice from "../images/icon-dice.svg";
 
 function Advice() {
 
@@ -10,6 +9,11 @@ function Advice() {
 
     // Fetching adviceData from API.
     useEffect(() => {
+
+        // Setting advice to null to display the loader until the advice gets fetched.
+        setAdvice(null);
+
+        // Fetching adviceData.
         fetch('https://api.adviceslip.com/advice')
         .then(response => response.json())
         .then((adviceData) => {
@@ -21,8 +25,9 @@ function Advice() {
 
         })
         .catch(error => console.log("Error:", error))
-    }, []);
+    });
 
+    // Displaying loader until the adviceData gets fetched.
     if (advice === null) {
         return (
             <>
@@ -37,10 +42,6 @@ function Advice() {
                 <AdviceCounter adviceID={adviceID} />
                 <p>&ldquo;{advice}&rdquo;</p>
             </div>
-            <div id="patternDivider"></div>
-            <button id="generateAdviceBtn">
-                <img src={iconDice} alt="Generate advice" />
-            </button>
         </>
     )
 }
